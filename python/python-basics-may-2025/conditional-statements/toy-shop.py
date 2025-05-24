@@ -22,7 +22,7 @@ if total_toys >= 50:
 # 10% shop rent
 total_price -= total_price * 0.10
 
-if total_price > tour_price:
+if total_price >= tour_price:
     money_left = total_price - tour_price
     print(f"Yes! {money_left:.2f} lv left.")
 else:
