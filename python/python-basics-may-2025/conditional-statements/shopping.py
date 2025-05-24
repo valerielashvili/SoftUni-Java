@@ -11,10 +11,10 @@ total_ram_price = ram_num * (total_videocard_price * 0.10)
 
 total_expenses = total_videocard_price + total_proc_price + total_ram_price
 
-if (videocard_num > proc_num):
+if videocard_num > proc_num:
     total_expenses -= total_expenses * 0.15
 
-if (budget > total_expenses):
+if budget > total_expenses:
     money_left = budget - total_expenses
     print(f"You have {money_left:.2f} leva left!")
 else:
