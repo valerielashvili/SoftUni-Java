@@ -8,7 +8,7 @@ time_for_lunch = lunch_break_min / 8
 time_for_rest = lunch_break_min / 4
 time_left = lunch_break_min - time_for_lunch - time_for_rest
 
-if (time_left >= episode_duration_min):
+if time_left >= episode_duration_min:
     extra_time = time_left - episode_duration_min
     print(f"You have enough time to watch {series_name} and left with {ceil(extra_time)} minutes free time.")
 else:
