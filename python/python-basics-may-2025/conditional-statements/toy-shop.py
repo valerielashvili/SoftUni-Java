@@ -15,14 +15,14 @@ discount = 0
 total_toys = num_puzzles + num_puppets + num_bears + num_minions + num_trucks
 total_price = num_puzzles * PUZZLE_PRICE + num_puppets * PUPPET_PRICE + num_bears * BEAR_PRICE + num_minions * MINION_PRICE + num_trucks * TRUCK_PRICE
 
-if (total_toys >= 50):
+if total_toys >= 50:
     discount = total_price * 0.25
     total_price -= discount
 
 # 10% shop rent
 total_price -= total_price * 0.10
 
-if (total_price > tour_price):
+if total_price > tour_price:
     money_left = total_price - tour_price
     print(f"Yes! {money_left:.2f} lv left.")
 else:
