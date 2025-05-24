@@ -8,7 +8,7 @@ slow_down_sec = (distance_m / 15) * 12.5
 result = seconds_per_meter * distance_m + slow_down_sec
 result = floor(result)
 
-if (result < world_record):
+if result < world_record:
     print(f"Yes, he succeeded! The new world record is {result:.2f} seconds.")
 else:
     secs_behind = result - world_record
