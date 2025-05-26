@@ -14,5 +14,5 @@ if movie_price > movie_budget:
     money_needed = movie_price - movie_budget
     print(f"Not enough money!\nWingard needs {money_needed:.2f} leva more.")
 else:
-    money_lef = movie_budget - movie_price
-    print(f"Action!\nWingard starts filming with {money_lef:.2f} leva left.")
+    money_left = movie_budget - movie_price
+    print(f"Action!\nWingard starts filming with {money_left:.2f} leva left.")
