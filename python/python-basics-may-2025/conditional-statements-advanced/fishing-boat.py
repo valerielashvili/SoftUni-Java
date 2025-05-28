@@ -3,7 +3,6 @@ season = input()
 num_fisherman = int(input())
 
 price = 0
-discount = 0
 
 if season == 'Spring':
     price = 3000
