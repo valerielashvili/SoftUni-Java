@@ -7,28 +7,20 @@ discount = 0
 
 if season == 'Spring':
     price = 3000
-
-    if num_fisherman <= 6:
-        discount = price * 0.10
-        price -= discount
-
 elif season == 'Summer' or season == 'Autumn':
     price = 4200
-    
-    if 7 <= num_fisherman <= 11:
-        discount = price * 0.15
-        price -= discount
-
 elif season == 'Winter':
     price = 2600
-    
-    if num_fisherman >= 12:
-        discount = price * 0.25
-        price -= discount
+
+if num_fisherman <= 6:
+    price -= price * 0.10
+elif 7 <= num_fisherman <= 11:
+    price -= price * 0.15
+elif num_fisherman >= 12:
+    price -= price * 0.25
 
 if num_fisherman % 2 == 0 and season != 'Autumn':
-    discount = price * 0.05
-    price -= discount
+    price -= price * 0.05
 
 if budget >= price:
     print(f"Yes! You have {budget - price:.2f} leva left.")
