@@ -7,30 +7,39 @@ discount = 0
 extra_charge = 0
 
 if flower == 'Roses':
+
     price = num_flowers * 5
     
     if num_flowers > 80:
         discount = price * 0.10
         price -= discount
+
 elif flower == 'Dahlia':
+
     price = num_flowers * 3.80
     
     if num_flowers > 90:
         discount = price * 0.15
         price -= discount
+
 elif flower == 'Tulips':
+
     price = num_flowers * 2.80
     
     if num_flowers > 80:
         discount = price * 0.15
         price -= discount
+
 elif flower == 'Narcissus':
+
     price = num_flowers * 3
 
     if num_flowers < 120:
         extra_charge = price * 0.15
         price += extra_charge
+
 elif flower == 'Gladiolus':
+    
     price = num_flowers * 2.50
     
     if num_flowers < 80:
