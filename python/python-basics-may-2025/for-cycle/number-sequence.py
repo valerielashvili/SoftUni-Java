@@ -10,7 +10,7 @@ for i in range(0, n):
     
     if num > biggest:
         biggest = num
-    elif num < smallest:
+    if num < smallest:
         smallest = num
 
 print(f"Max number: {biggest}")
