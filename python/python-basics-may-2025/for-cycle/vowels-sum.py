@@ -1,17 +1,17 @@
 text = input()
 
-sum = 0
+total = 0
 
 for char in text:
     if char == 'a':
-        sum += 1
+        total += 1
     elif char == 'e':
-        sum += 2
+        total += 2
     elif char == 'i':
-        sum += 3
+        total += 3
     elif char == 'o':
-        sum += 4
+        total += 4
     elif char == 'u':
-        sum += 5
+        total += 5
 
-print(sum)
+print(total)
