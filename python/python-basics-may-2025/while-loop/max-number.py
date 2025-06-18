@@ -1,7 +1,6 @@
 import sys
 
 usr_input = input()
-num = 0
 biggest = -sys.maxsize
 
 while usr_input != "Stop":
