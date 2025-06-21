@@ -1,7 +1,5 @@
-from math import floor
-
 change = float(input())
-cents = floor(change * 100)
+cents = int(change * 100)
 total_coins = 0
 
 for i in 200, 100, 50, 20, 10, 5, 2, 1:
