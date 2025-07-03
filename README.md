@@ -28,7 +28,7 @@
 				<tr>
 					<td colspan="3">
 						<div>
-                            A repository with all my homeworks I have written for various courses at Software University.
+                            A repository with all my homeworks I have written for various courses at Software University.<br />
                             All solutions give 100 points, the maximum possible score.
                         </div>
 					</td>
