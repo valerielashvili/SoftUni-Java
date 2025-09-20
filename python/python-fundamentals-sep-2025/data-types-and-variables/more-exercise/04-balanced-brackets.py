@@ -3,7 +3,7 @@ n_lines = int(input())
 brackets = ""
 balanced = "BALANCED"
 
-for i in range(n_lines):
+for _ in range(n_lines):
     input_string = input()
 
     if input_string == '(':
